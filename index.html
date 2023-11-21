@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="chart">
+    <div class="chart-header">
+      <div class="chart-text">
+        <h5>My Balance</h5>
+        <h1>$733.8</h1>
+      </div>
+
+      <div>
+        <svg 
+        width="72" 
+        height="48"
+        viewBox="0 0 72 48" 
+        xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" fill-rule="evenodd">
+            <circle fill="#382314" cx="48" cy="24" r="24"/>
+            <circle stroke="#FFF" stroke-width="2" cx="24" cy="24" r="23"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <div class="chart-body">
+      <h1>Spending - Last 7 days</h1>
+
+      <div class="chart-bar">
+       
+        <div class="bar">
+          <!--bars-->
+          <div>
+            <div class="tooltip" id="one">$15.3</div>
+          </div>
+          <div>
+            <div class="tooltip" id="two">$23.5</div>
+          </div>
+          <div>
+            <div class="tooltip" id="three">$35.1</div>
+          </div>
+          <div>
+            <div class="tooltip" id="four">$43.9</div>
+          </div>
+          <div>
+            <div class="tooltip" id="five">$28.3</div>
+          </div>
+          <div>
+            <div class="tooltip" id="six">$18.36</div>
+          </div>
+          <div>
+            <div class="tooltip" id="seven">$30.3</div>
+          </div>
+        </div>
+
+          <div class="labels">
+            <p>mon</p>
+            <p>tue</p>
+            <p>wed</p>
+            <p>thu</p>
+            <p>fri</p>
+            <p>sat</p>
+            <p>sun</p>
+          </div>
+      </div>
+      <hr/>
+        
+    <div class="total-container">
+        <div class="total">
+          <h5>Total this month</h5>
+          <h1>$324.8</h1>
+        </div>
+
+        <div class="month">
+          <h5>+1.7%</h5>
+          <h5>from last month</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Roniel Lora</a>.
+  </div>
+</body>
+</html>

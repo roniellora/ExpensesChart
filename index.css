@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap');
+
+:root{
+    --softred: hsl(10, 79%, 65%);
+    --softredlight: hsla(10, 79%, 65%, 0.884);
+    --cyan: hsl(186, 34%, 60%);
+    --cyanlight: hsl(186, 34%, 60%, 0.821);
+    --darkbrown: hsl(25, 47%, 15%);
+    --cream: hsl(27, 66%, 92%);
+    --mediumbrown: hsl(28, 18%, 53%);
+    --paleorange: hsl(33, 100%, 98%);
+    --font: 18px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--cream);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.chart{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.chart-header,
+.chart-body{
+    display: flex;
+    padding: 30px;
+    border-radius: 20px;
+    width: 540px;
+}
+
+.chart-header{
+    background-color: var(--softred);
+    height: 128px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.chart-body{
+    flex-direction: column;
+    background: #fff;
+    gap: 35px;
+}
+
+hr{
+    border: 0.01px solid var(--mediumbrown);
+    font-weight: lighter;
+}
+
+.total-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.month{
+    text-align: center;
+}
+
+.month h5:first-of-type{
+    color: var(--mediumbrown);
+}
+
+.total h5{
+    color: var(--mediumbrown);
+    font-weight: 400;
+    font-size: var(--font);
+}
+
+.chart-bar{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.bar{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.bar div{
+    position: relative;
+    width: 50px;
+    border-radius: 5px;
+    background: var(--softred);
+    cursor: pointer;
+    transition: 0.2s all ease-in;
+}
+
+.bar div:nth-child(1){
+    height: 50px;
+}
+
+.bar div:nth-child(1):hover #one{
+    display: block;
+}
+
+.bar div:nth-child(2){
+    height: 100px;
+}
+
+.bar div:nth-child(2):hover #two{
+    display: block;
+}
+
+.bar div:nth-child(3){
+    height: 150px;
+}
+
+.bar div:nth-child(3):hover #three{
+    display: block;
+}
+
+.bar div:nth-child(4){
+    height: 200px;
+    background: var(--cyan);
+}
+
+.bar div:nth-child(4):hover #four{
+    display: block;
+    background: var(--cyanlight);
+}
+
+.bar div:nth-child(5){
+    height: 130px;
+}
+
+.bar div:nth-child(5):hover #five{
+    display: block;
+}
+
+.bar div:nth-child(6){
+    height: 66px;
+}
+
+.bar div:nth-child(6):hover #six{
+    display: block;
+}
+
+.bar div:nth-child(7){
+    height: 135px;
+}
+
+.bar div:nth-child(7):hover #seven{
+    display: block;
+}
+
+
+.labels{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--mediumbrown);
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+}
+
+.labels p{
+    align-items: center;
+}
+
+.tooltip{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px !important;
+    height: auto !important;
+    background: var(--darkbrown) !important;
+    border-radius: 4px;
+    padding: 5px;
+    color: #fff;
+    top: -40px;
+    margin-left: -5px;
+}
+
+
+
+#one{
+    display: none;
+}
+#two{
+    display: none;
+}
+#three{
+    display: none;
+}
+#four{
+    display: none;
+}
+#five{
+    display: none;
+}
+#six{
+    display: none;
+}
+#seven{
+    display: none;
+}
